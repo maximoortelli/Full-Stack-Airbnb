@@ -5,7 +5,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import useRegisterModal from "../hooks/useRegisterModal";
+import useRegisterModal from "@/app/hooks/useRegisterModal";
 import Modal from "./Modal";
 import Heading from "../Heading";
 import Input from "../inputs/Input";
@@ -92,10 +92,11 @@ const RegisterModal = () => {
 
       <div className="text-neutral-500 text-center mt-4 font-light">
         <div className="flex flex-row justify-center text-center items-center gap-2">
-          <div>
-            Already have an account?
-          </div>
-          <div onClick={registerModal.onClose} className="text-neutral-800 cursor-pointer hover:underline">
+          <div>Already have an account?</div>
+          <div
+            onClick={registerModal.onClose}
+            className="text-neutral-800 cursor-pointer hover:underline"
+          >
             Log in
           </div>
         </div>
