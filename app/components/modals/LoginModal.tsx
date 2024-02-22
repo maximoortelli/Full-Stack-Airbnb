@@ -3,7 +3,6 @@ import { signIn } from "next-auth/react";
 import axios from "axios";
 import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa";
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
@@ -86,14 +85,14 @@ const LoginModal = () => {
         outline
         icon={FcGoogle}
         label="Continue with Google"
-        onClick={() => {}}
+        onClick={() => {signIn("google")}}
       />
 
       <Button
         outline
-        icon={FaGithub}
+        icon={AiFillGithub}
         label="Continue with GitHub"
-        onClick={() => {}}
+        onClick={() => {signIn("github")}}
       />
 
       <div className="text-neutral-500 text-center mt-4 font-light">
