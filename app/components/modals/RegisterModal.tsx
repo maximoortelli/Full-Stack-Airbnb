@@ -11,9 +11,11 @@ import Input from "../inputs/Input";
 import toast from "react-hot-toast";
 import Button from "../Button";
 import { signIn } from "next-auth/react";
+import useLoginModal from "@/app/hooks/useLoginModal";
 
 const RegisterModal = () => {
   const registerModal = useRegisterModal();
+  const loginModal = useLoginModal();
   const [isLoading, setIsLoading] = useState(false);
 
   const {
@@ -40,6 +42,11 @@ const RegisterModal = () => {
       toast.success("You have successfully registered");
     }
   };
+
+  const toggle = useCallback(() => {
+    registerModal.onClose();
+    loginModal.onOpen();
+  }, [loginModal, registerModal]);
 
   // Aquí puedes agregar el contenido que desees en tu modal
   const bodyContent = (
@@ -81,7 +88,7 @@ const RegisterModal = () => {
         icon={FcGoogle}
         label="Continue with Google"
         onClick={() => {
-          signIn('google');
+          signIn("google");
         }}
       />
 
@@ -98,7 +105,7 @@ const RegisterModal = () => {
         <div className="flex flex-row justify-center text-center items-center gap-2">
           <div>Already have an account?</div>
           <div
-            onClick={registerModal.onClose}
+            onClick={toggle}
             className="text-neutral-800 cursor-pointer hover:underline"
           >
             Log in
