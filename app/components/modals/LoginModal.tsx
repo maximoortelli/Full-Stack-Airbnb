@@ -37,22 +37,25 @@ const LoginModal = () => {
     signIn("credentials", {
       ...data,
       redirect: false,
-    })
-    
-    .then((callback) => {
+    }).then((callback) => {
       setIsLoading(false);
 
       if (callback?.ok) {
         toast.success("Logged in");
         router.refresh();
-        loginModal.onClose()
+        loginModal.onClose();
       }
 
-      if(callback?.error){
+      if (callback?.error) {
         toast.error(callback.error);
       }
     });
   };
+
+  const toggle = useCallback(() => {
+    loginModal.onClose();
+    registerModal.onOpen();
+  }, [loginModal, registerModal]);
 
   // Aquí puedes agregar el contenido que desees en tu modal
   const bodyContent = (
@@ -85,24 +88,28 @@ const LoginModal = () => {
         outline
         icon={FcGoogle}
         label="Continue with Google"
-        onClick={() => {signIn("google")}}
+        onClick={() => {
+          signIn("google");
+        }}
       />
 
       <Button
         outline
         icon={AiFillGithub}
         label="Continue with GitHub"
-        onClick={() => {signIn("github")}}
+        onClick={() => {
+          signIn("github");
+        }}
       />
 
       <div className="text-neutral-500 text-center mt-4 font-light">
         <div className="flex flex-row justify-center text-center items-center gap-2">
-          <div>Already have an account?</div>
+          <div>First time using Airbnb?</div>
           <div
-            onClick={loginModal.onClose}
+            onClick={toggle}
             className="text-neutral-800 cursor-pointer hover:underline"
           >
-            Log in
+            Create an account
           </div>
         </div>
       </div>
