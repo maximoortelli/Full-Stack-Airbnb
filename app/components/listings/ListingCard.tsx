@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import { Listing, Reservation } from "@prisma/client";
 
-import { SafeUser } from "@/app/types";
+import { SafeListing, SafeUser } from "@/app/types";
 import useCountries from "@/app/hooks/useCountries";
 import React, { useCallback, useMemo } from "react";
 import { format } from "date-fns";
@@ -10,12 +10,13 @@ import Image from "next/image";
 import HeartButton from "../HeartButton";
 import Button from "../Button";
 
+
 interface ListingCardPops {
-  data: Listing;
+  data: SafeListing;
   reservation?: Reservation;
   onAction?: (id: string) => void;
   disabled?: boolean;
-  actionLabel: string;
+  actionLabel?: string;
   actionId?: string;
   currentUser?: SafeUser | null;
 }
@@ -29,7 +30,7 @@ const ListingCard: React.FC<ListingCardPops> = ({
   actionId = "",
   currentUser,
 }) => {
-  const reducer = useRouter();
+  const router = useRouter();
   const { getByValue } = useCountries();
 
   const location = getByValue(data.locationValue);
