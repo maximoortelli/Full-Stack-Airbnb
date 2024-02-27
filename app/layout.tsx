@@ -32,12 +32,12 @@ export default async function RootLayout({
         <ClientOnly>
           <ToasterProvider />
           {/*<Modal actionLabel="Submit" title="Hello World" isOpen={true} /> */}
-          <RentModal/>
+          <RentModal />
           <LoginModal />
           <RegisterModal />
           <Navbar currentUser={currentUser} />
         </ClientOnly>
-        {children}
+        <div className="pb-20 pt-28">{children}</div>
       </body>
     </html>
   );
