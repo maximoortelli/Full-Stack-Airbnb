@@ -83,7 +83,7 @@
        <a href="https://nodejs.org/en">Node.js</a>
      </li>
       <li>
-       <img src="./public/media/eslint.png" width="50"/>
+       <img src="./public/images/eslint.png" width="50"/>
        <a href="https://eslint.org">Eslint</a>
      </li>
       <li>
@@ -160,8 +160,11 @@ bun dev
  - [Kanban board Project link](https://github.com/users/maximoortelli/projects/9)
 
 # Complete State of Kanban board
-  <img src="./public/media/kanban1.png" />
-  <img src="./public/media/kanban2.png" />
+  <img src="./public/images/kanban1.png" />
+  <img src="./public/images/kanban2.png" />
+<img src="./public/images/kanban3.png" />
+  <img src="./public/images/kanban4.png" />
+<img src="./public/images/kanban5.png" />
 
 # 👥 Authors 
 <a name="author"></a>
