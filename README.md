@@ -3,7 +3,7 @@
    <h1>🏘🏙 Full Stack Airbnb 🏘🏙</h1>
 </div>
   <div align="center">
-    <img src="./public/media/amazon.jpg" />
+    <img src="./public/images/airbnb.jpg" />
   </div>
 
 # 📗 Table of Contents
@@ -30,13 +30,23 @@
 
 # 📖🛒 Full Stack Amazon <a name="full-stack-amazon"></a>
 
-> In this new project, I have carried out an e-commerce identical to that of Amazon, taking advantage of key technologies such as JavaScript, Firebase, Next.js, NextAuth, Tailwind.css, Redux and Stripe. During this process, I have ensured an effective installation of Next.js, setting the necessary configurations to ensure optimal performance and a smooth user experience.
+> In this project I developed a Full Stack Airbnb application, where the user can reserve or rent a house. Additionally, I integrated key technologies for 
+> the front-end such as:
 
-> The NextAuth integration has been essential for authentication management, providing a strong and efficient security layer.
+> - Next.js.
+> - React.js.
+> - Typescript.
 
-> Additionally, I have leveraged the power of Firebase to enable real-time functionality and cloud data storage, thereby contributing to the scalability and efficiency of the system. The implementation of Tailwind.css has allowed for an elegant and responsive design, significantly improving the user interface.
+> And for the back-end:
 
-> The integration of Redux has been essential to manage the state of the application centrally, facilitating the flow of data and interaction between components.
+> - Next.js
+> - Express
+> - MongoDB for data management.
+
+> I configured the project thoroughly and ensured a successful installation.
+
+> To improve the quality of the code I have incorporated linters, thus guaranteeing cleaner and more consistent development.
+   This set of updates represents an important step towards delivering a robust and efficient medical application.
 
 # 💻✅ Deployment 
 
