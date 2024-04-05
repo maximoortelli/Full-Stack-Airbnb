@@ -9,7 +9,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖🛒 Full Stack Airbnb](#-full-stack-airbnb-)
+- [🏘🏙 Full Stack Airbnb 🏘🏙](#-full-stack-airbnb-)
 - [✅ Deployment](#-deployment)
   - [🛠 Built With](#-built-with)
     - [Tech Stack](#tech-stack)
