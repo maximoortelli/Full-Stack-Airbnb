@@ -9,7 +9,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖🛒 Full Stack Amazon](#-full-stack-amazon)
+- [📖🛒 Full Stack Airbnb](#-full-stack-airbnb-)
 - [✅ Deployment](#-deployment)
   - [🛠 Built With](#-built-with)
     - [Tech Stack](#tech-stack)
@@ -28,7 +28,7 @@
   - [🙏 Acknowledgments](#-acknowledgments)
   - [📝 License](#-license)
 
-# 📖🛒 Full Stack Amazon <a name="full-stack-amazon"></a>
+# 🏘🏙 Full Stack Airbnb 🏘🏙<a name="full-stack-amazon"></a>
 
 > In this project I developed a Full Stack Airbnb application, where the user can reserve or rent a house. Additionally, I integrated key technologies for 
 > the front-end such as:
@@ -52,7 +52,7 @@
 
 <a name="deployment"></a>
 
-<a href="https://full-stack-amazon-rouge.vercel.app/" target="_blank">Click here to see the deployment</a>
+<a href="https://full-stack-rental.vercel.app/" target="_blank">Click here to see the deployment</a>
 
 # 🛠 Built With 
 
@@ -72,6 +72,10 @@
      <li>
         <img src="https://skillicons.dev/icons?i=js"/>
         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
+     </li>
+    <li>
+        <img src="https://skillicons.dev/icons?i=typescript"/>
+        <a href="https://www.typescriptlang.org/">Typescript</a>
      </li>
      <li>
        <img src="https://skillicons.dev/icons?i=nodejs"/>
@@ -108,9 +112,13 @@
 <div>
     <h2>Database</h2>
     <ul>
+        <li>
+          <img src="https://skillicons.dev/icons?i=express"/>
+          <a href="https://expressjs.com/es/">Express.js</a>
+       </li>
        <li>
-          <img src="https://skillicons.dev/icons?i=firebase"/>
-          <a href="https://firebase.google.com/?hl=es">Firebase</a>
+          <img src="https://skillicons.dev/icons?i=mongo"/>
+          <a href="https://www.mongodb.com/atlas/database">Mongo.db</a>
        </li>
     </ul>
 </div>
@@ -148,7 +156,7 @@ bun dev
 > Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 # Kanban board <a name="kanban-board"></a>
- - [Kanban board Project link](https://github.com/users/maximoortelli/projects/10/views/1)
+ - [Kanban board Project link](https://github.com/users/maximoortelli/projects/9)
 
 # Complete State of Kanban board
   <img src="./public/media/kanban1.png" />
@@ -169,7 +177,6 @@ bun dev
 - [x] **Solid Principles**
 - [x] **Linters run correctly**
 - [x] **The app run satisfactorily**
-- [x] **Jest & React Test Library**
 - [x] **Once the work is completed, the deployment will proceed.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -178,7 +185,7 @@ bun dev
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/maximoortelli/Full-Stack-Amazon/issues).
+Feel free to check the [issues page](https://github.com/maximoortelli/Full-Stack-Airbnb/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -190,7 +197,7 @@ If you like this project please give it a star 😁🌟✨
 
 # 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We thank to [Amazon](https://www.amazon.com/ref=nav_logo) for the design.
+We thank to [Airbnb](https://www.airbnb.com.ar/) for the design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
