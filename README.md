@@ -36,6 +36,7 @@
 > - Next.js.
 > - React.js.
 > - Typescript.
+> - Javascript.
 
 > And for the back-end:
 
